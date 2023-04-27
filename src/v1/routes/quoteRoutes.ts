@@ -5,9 +5,10 @@ import { QuoteController } from "../../controllers/quoteController";
 const quoteController = new QuoteController()
 
 router.get("/", quoteController.getAll)
+router.post("/", quoteController.getAll)
 
 
-router.get("/:quoteId", (req,res)=>{
+/*router.get("/:quoteId", (req,res)=>{
     res.send("Get existing quote")
 })
 
@@ -21,6 +22,6 @@ router.patch("/:quoteId", (req,res)=>{
 
 router.delete("/:quoteId", (req,res)=>{
     res.send("Delete quote")
-})
+})*/
 
 module.exports = router
