@@ -1,11 +1,9 @@
 const DB = require("./db.json")
 
 const getAllQuotes = () =>{
-    return DB.text
+    return DB
 }
 
-const getAllAuthors = ()=>{
-    return DB.author
-}
 
-module.exports = {getAllQuotes, getAllAuthors}
+
+module.exports = {getAllQuotes}
